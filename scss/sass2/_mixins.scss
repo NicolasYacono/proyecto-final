@@ -1,2 +1,19 @@
 @import "../variables/variables";
 
+
+@mixin estilos-fechas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: $color2;
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 80%;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.4);
+    font-family: $font-family2;
+    font-weight: $font-weight;
+}
+
