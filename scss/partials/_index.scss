@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 :root {
-    background: url(/assets/img/jugos/Fondo.jpg);
+    background: url(/assets/img/los-jugos/grafica/Fondo.jpg);
     background-position:bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -74,7 +74,7 @@ header{
 }
     .video-1{
         grid-area: video-1;
-        background-image:url(/assets/img/jugos/MysticWay.jpg);
+        background-image:url(/assets/img/los-jugos/grafica/MysticWay.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: scroll;
@@ -138,7 +138,7 @@ header{
     }
     .video-2{
         grid-area: video-2;
-        background-image: url(/assets/img/labanda/banda-1.jpg);
+        background-image: url(/assets/img/los-jugos/banda/banda-1.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: scroll;
@@ -179,7 +179,7 @@ header{
     }
     .gregory{
         grid-area: gregory;
-        background-image: url(/assets/img/jugos/Gregory-Morris-jamaica.jpg);
+        background-image: url(/assets/img/los-jugos/grafica/Gregory-Morris-jamaica.jpg);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: contain ;
