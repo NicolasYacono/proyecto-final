@@ -1,17 +1,19 @@
 @import "../variables/variables";
 
-@mixin flexibilizar-centrar {
+
+@mixin estilos-fechas{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    color: $color2;
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 80%;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.4);
+    font-family: $font-family2;
+    font-weight: $font-weight;
 }
 
-@mixin fuentes {
-    font-family: $tipo-de-letra;
-    line-height: 1.5;
-    font-style: italic;
-    font-weight: bold;
-}
-@mixin estilos-de-anclas {
-    text-decoration: none;
-    font-family: $tipo-de-letra;
-}

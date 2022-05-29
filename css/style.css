@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+=======
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@200&family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik+Glitch&display=swap");
+>>>>>>> rama-trabajo
 * {
   margin: 0;
   padding: 0; }
 
+<<<<<<< HEAD
 .header-footer, header, footer {
   background-color: #eca50a;
   width: 100%;
@@ -50,3 +56,764 @@ footer {
   footer a {
     text-decoration: none;
     font-family: verdana; }
+=======
+.main-contacto {
+  margin: 20px 50px 20px 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 10px;
+  border: 2px white solid;
+  border-style: outset;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); }
+  .main-contacto .formulario-contacto {
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: auto; }
+    .main-contacto .formulario-contacto .fieldset1 {
+      margin: 5px;
+      border: none; }
+      .main-contacto .formulario-contacto .fieldset1 .legend1 {
+        margin-left: 28%;
+        text-align: center;
+        margin-bottom: 10px; }
+      .main-contacto .formulario-contacto .fieldset1 .label-apellido {
+        padding-left: 20px; }
+      .main-contacto .formulario-contacto .fieldset1 input {
+        color: black; }
+  .main-contacto .div-contacto {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 5px;
+    margin-top: 10px; }
+  .main-contacto .enviar {
+    padding: 5px;
+    display: flex;
+    flex-direction: row; }
+    .main-contacto .enviar input {
+      outline: none;
+      padding: 5px;
+      margin: 15px;
+      background-color: black;
+      color: whitesmoke;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold; }
+      .main-contacto .enviar input:hover {
+        background-color: red;
+        width: 100px; }
+
+.grid-disco {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(2, 45%);
+  gap: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-areas: "disco1 disco1 disco1" "disco2 disco2 disco2"; }
+
+.disco1 {
+  grid-area: disco1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .disco1 iframe {
+    width: 90%;
+    border-radius: 15px;
+    margin: 50px 30px 50px 20px; }
+  .disco1 .section1 {
+    color: white;
+    width: 800px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.6);
+    border-radius: 15px;
+    margin-top: 20px; }
+    .disco1 .section1 .columna1 {
+      color: white;
+      width: 100%; }
+    .disco1 .section1 .fila1 {
+      padding: 20px;
+      margin-left: 10px; }
+      .disco1 .section1 .fila1 td {
+        padding: 20px;
+        text-align: center; }
+  .disco1 .masdisco {
+    text-align: center;
+    color: white;
+    padding-top: 10%; }
+    .disco1 .masdisco p {
+      padding: 10%; }
+
+.disco2 {
+  grid-area: disco2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .disco2 img {
+    height: 300px;
+    width: 95%;
+    border-radius: 15px;
+    margin: 50px 30px 50px 20px; }
+  .disco2 .section1 {
+    color: white;
+    width: 110%;
+    height: 300px;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 20px; }
+    .disco2 .section1 .columna1 {
+      color: white;
+      width: 100%; }
+    .disco2 .section1 .fila1 {
+      padding: 20px;
+      margin-left: 10px; }
+      .disco2 .section1 .fila1 td {
+        padding: 20px;
+        text-align: center; }
+  .disco2 .masdisco {
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 2%; }
+    .disco2 .masdisco h3 {
+      background-color: rgba(0, 128, 0, 0.7);
+      color: white;
+      border-radius: 15px;
+      margin-top: 10px;
+      width: 80%;
+      margin-left: 30px; }
+    .disco2 .masdisco p {
+      padding-top: 50px; }
+
+.grid-novedades {
+  display: grid;
+  border: none;
+  margin-left: 10%;
+  grid-template-columns: repeat(4, 24.7%);
+  grid-template-rows: repeat(4, 150px);
+  gap: 5px;
+  grid-template-areas: "concierto concierto1 concierto1 concierto1" "concierto concierto2 concierto2 concierto2" "concierto concierto3 concierto3 concierto3" "pagar pagar pagar pagar"; }
+
+.concierto1 {
+  grid-area: concierto1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 15px;
+  border-style: outset;
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+  .concierto1 .fecha-1 {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    border: 2px black solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px; }
+  .concierto1 .descripcion {
+    text-align: center; }
+  .concierto1 a {
+    background-color: whitesmoke;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px; }
+    .concierto1 a:hover {
+      border-top: black solid 2px;
+      border-left: black solid 2px; }
+      .concierto1 a:hover img {
+        animation: chango 1s infinite linear alternate; }
+    .concierto1 a img {
+      height: 60px; }
+
+.concierto2 {
+  grid-area: concierto2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 15px;
+  border-style: outset;
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+  .concierto2 .fecha-1 {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    border: 2px black solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px; }
+  .concierto2 .descripcion {
+    text-align: center; }
+  .concierto2 a {
+    background-color: whitesmoke;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px; }
+    .concierto2 a:hover {
+      border-top: black solid 2px;
+      border-left: black solid 2px; }
+      .concierto2 a:hover img {
+        animation: chango 1s infinite linear alternate; }
+    .concierto2 a img {
+      height: 60px; }
+
+.concierto3 {
+  grid-area: concierto3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 15px;
+  border-style: outset;
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
+  .concierto3 .fecha-1 {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    border: 2px black solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px;
+    margin: 5px; }
+  .concierto3 .descripcion {
+    text-align: center; }
+  .concierto3 a {
+    background-color: whitesmoke;
+    width: 80px;
+    border-radius: 20px;
+    height: 70px;
+    padding: 10px; }
+    .concierto3 a:hover {
+      border-top: black solid 2px;
+      border-left: black solid 2px; }
+      .concierto3 a:hover img {
+        animation: chango 1s infinite linear alternate; }
+    .concierto3 a img {
+      height: 60px; }
+
+.pagar {
+  grid-area: pagar;
+  background-image: url(/assets/img/aside/mercadopago-og.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  padding-left: 15%;
+  margin-right: 10%;
+  margin-left: 25%;
+  margin-top: 20px;
+  border: 2px black solid;
+  border-radius: 15px;
+  animation: mercado 5s infinite; }
+
+@keyframes mercado {
+  from { }
+  to {
+    background-image: url(/assets/img/aside/MasterCard.jpg); } }
+
+.concierto {
+  grid-area: concierto;
+  padding: 5px;
+  width: fit-content;
+  border: 3px white solid;
+  border-radius: 15px;
+  border-style: outset;
+  width: 105%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-left: 30px;
+  text-align: center; }
+  .concierto .fecha {
+    height: 100px;
+    margin-top: 10px;
+    text-align: center;
+    color: whitesmoke; }
+    .concierto .fecha h2 {
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      background-color: red; }
+    .concierto .fecha .compra {
+      background-color: rgba(255, 0, 0, 0.8);
+      border: 1px white solid;
+      display: flex;
+      align-items: center;
+      color: red;
+      width: 40%;
+      border-radius: 20px;
+      height: 50px;
+      margin-left: 30%;
+      padding: 10px; }
+      .concierto .fecha .compra:hover {
+        background-color: red;
+        width: 63%;
+        margin-left: 18%;
+        border: 1.5px white solid; }
+        .concierto .fecha .compra:hover a {
+          margin-left: 38%; }
+          .concierto .fecha .compra:hover a img {
+            animation: chango 1s infinite linear alternate; }
+      .concierto .fecha .compra a {
+        margin-left: 30%; }
+        .concierto .fecha .compra a img {
+          height: 45px; }
+  .concierto .direccion {
+    color: whitesmoke; }
+    .concierto .direccion h3 {
+      text-decoration: overline;
+      margin-top: 5px; }
+    .concierto .direccion h4 {
+      margin-bottom: 10px; }
+  .concierto .mapa {
+    height: 250px;
+    width: 220px;
+    margin: auto; }
+
+@keyframes chango {
+  from {
+    transform: rotate(8deg); }
+  to {
+    transform: rotate(-8deg); } }
+
+@media screen and (max-width: 320px) {
+  .grid-novedades {
+    display: grid;
+    border: 2px black solid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas: "historia historia" "novedad-5 novedad-2" "novedad-3 novedad-1" "novedad-4 novedad-4"; }
+  .historia {
+    grid-area: historia;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 5px;
+    width: fit-content;
+    font-size: xx-small; }
+  .historia-1 {
+    text-align: center;
+    font-size: small; }
+  .novedad-1 {
+    grid-area: novedad-1; }
+  .novedad-2 {
+    grid-area: novedad-2;
+    background-color: #1465bb;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px; }
+  .novedad-3 {
+    grid-area: novedad-3;
+    background-color: #bd0003;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px; }
+  .novedad-4 {
+    grid-area: novedad-4;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    font-size: small; }
+  .novedad-5 {
+    grid-area: novedad-5; } }
+
+.container-integrantes {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .container-integrantes .cards {
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms; }
+    .container-integrantes .cards:hover {
+      transform: translateY(-10px);
+      background-color: rgba(0, 0, 0, 0.4); }
+    .container-integrantes .cards h2 {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      margin-top: 10px; }
+    .container-integrantes .cards p {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      margin-top: 10px;
+      font-size: 14px; }
+    .container-integrantes .cards .cover-cards {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 15px; }
+      .container-integrantes .cards .cover-cards img:hover {
+        transform: scale(1.1); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  background: url(/assets/img/los-jugos/grafica/Fondo.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  font-family: "Fugaz One", cursive;
+  color: black;
+  margin-bottom: 10px; }
+  header .imagenes {
+    margin-left: 20px;
+    margin-top: 20px; }
+    header .imagenes .vacio {
+      height: 15px; }
+    header .imagenes .lleno {
+      height: 20px; }
+    header .imagenes .explota {
+      height: 30px; }
+
+.navegador1 {
+  color: black; }
+  .navegador1 .barra-de-navegacion {
+    text-align: left;
+    margin-bottom: 30px;
+    list-style-type: none; }
+    .navegador1 .barra-de-navegacion a {
+      font-size: large;
+      font-family: "Fugaz One", cursive;
+      color: black;
+      text-decoration: overline;
+      margin-left: 30%;
+      text-transform: uppercase;
+      margin-top: 5px; }
+      .navegador1 .barra-de-navegacion a:hover {
+        color: whitesmoke; }
+
+.grid {
+  display: grid;
+  border: none;
+  color: whitesmoke;
+  grid-template-columns: 2fr 2fr 0.5fr;
+  grid-template-rows: repeat(3, 250px);
+  gap: 15px;
+  margin: 10px;
+  grid-template-areas: "video-1 video-2 publicidad" "gregory gregory publicidad" "spotify whatsapp publicidad"; }
+
+.video-1 {
+  grid-area: video-1;
+  background-image: url(/assets/img/los-jugos/grafica/MysticWay.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-radius: 15px;
+  animation: movimiento 15s infinite linear alternate; }
+  .video-1 .titulo-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 65%;
+    font-size: 12px; }
+    .video-1 .titulo-1 h2 {
+      text-decoration: wavy;
+      color: red; }
+    .video-1 .titulo-1 h3 {
+      color: red;
+      text-decoration: overline; }
+  .video-1 .boton-mystic {
+    margin-top: 5px;
+    margin-left: 32%;
+    width: 35%;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #373c3c;
+    border-color: red; }
+    .video-1 .boton-mystic a {
+      display: flex;
+      justify-content: space-around; }
+    .video-1 .boton-mystic .play {
+      height: 27px; }
+    .video-1 .boton-mystic:hover {
+      background-color: red;
+      border-color: whitesmoke; }
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left; }
+  to {
+    background-position: top right; } }
+
+.video-2 {
+  grid-area: video-2;
+  background-image: url(/assets/img/los-jugos/banda/banda-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-radius: 15px; }
+  .video-2 .textos-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60%;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    font-weight: bold; }
+  .video-2 .lasala {
+    text-decoration: overline; }
+  .video-2 .entradas {
+    font-size: larger;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgba(11, 135, 167, 0.3);
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    box-shadow: 3px 3px 3px #373c3c;
+    animation: entradas .10s infinite; }
+
+@keyframes entradas {
+  0% {
+    background-color: rgba(11, 135, 167, 0.3); }
+  50% {
+    background-color: rgba(255, 0, 0, 0.5); } }
+
+.gregory {
+  grid-area: gregory;
+  background-image: url(/assets/img/los-jugos/grafica/Gregory-Morris-jamaica.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+  font-style: "Poppins", sans-serif;
+  background-color: rgba(128, 128, 128, 0.4);
+  font-weight: bolder; }
+  .gregory .gregory-2 {
+    font-size: large;
+    margin-top: 20px;
+    width: 40%;
+    margin-left: 48%;
+    text-align: center; }
+  .gregory .gregory-3 {
+    padding: auto;
+    margin-top: 30px;
+    margin-left: 45%;
+    font-size: x-small;
+    width: 50%;
+    border-radius: 15px; }
+
+.publicidad {
+  grid-area: publicidad;
+  background-image: url(/assets/img/aside/pelagatos2.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  width: 120px;
+  border-radius: 15px;
+  height: 70%;
+  margin-top: 100px;
+  animation: pelagatos 10s infinite linear alternate;
+  background-color: #fff200; }
+
+@keyframes pelagatos {
+  from {
+    background-position: top; }
+  to {
+    background-position: bottom; } }
+
+.spotify {
+  display: flex;
+  justify-content: center;
+  grid-area: spotify;
+  background-color: #1ed671;
+  margin-top: 30px;
+  margin-left: 30%;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 50%; }
+  .spotify .jugospotify {
+    color: #1ed671;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+    padding-right: 0;
+    font-size: 1px; }
+  .spotify:hover {
+    padding-top: 25px;
+    background-color: rgba(30, 214, 113, 0.5); }
+    .spotify:hover .jugospotify {
+      font-family: "Poppins", sans-serif;
+      color: black;
+      font-weight: 5000;
+      text-align: center;
+      font-size: 20px;
+      margin-left: 0;
+      margin-top: 10px; }
+    .spotify:hover img {
+      height: 100px; }
+  .spotify img {
+    height: 75px; }
+
+.whatsapp {
+  grid-area: whatsapp;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 10%;
+  background-color: #25d366;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 50%; }
+  .whatsapp .numerowhatsapp {
+    color: #25d366;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+    padding-right: 0;
+    font-size: 1px; }
+  .whatsapp:hover {
+    padding-top: 30px;
+    background-color: rgba(37, 211, 102, 0.5); }
+    .whatsapp:hover .numerowhatsapp {
+      font-family: "Poppins", sans-serif;
+      color: black;
+      font-weight: 5000;
+      text-align: center;
+      font-size: 20px;
+      margin-left: 0;
+      margin-top: 10px; }
+    .whatsapp:hover img {
+      height: 100px; }
+  .whatsapp img {
+    height: 75px; }
+
+footer {
+  width: 100%;
+  padding: 10px 0px;
+  background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif; }
+  footer .pie-de-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto; }
+    footer .pie-de-pagina .redes-sociales {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px; }
+      footer .pie-de-pagina .redes-sociales a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 5px; }
+    footer .pie-de-pagina .logo {
+      display: flex;
+      flex-direction: row;
+      font-size: 10px;
+      font-weight: bold; }
+      footer .pie-de-pagina .logo img {
+        width: 90px; }
+      footer .pie-de-pagina .logo .lema {
+        margin-top: 10px; }
+  footer .derechos {
+    text-align: center; }
+>>>>>>> rama-trabajo

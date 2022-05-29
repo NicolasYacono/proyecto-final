@@ -1,0 +1,312 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+
+
+.grid-novedades{
+    display: grid;
+    border: none;
+    margin-left: 10%;
+    grid-template-columns: repeat(4, 24.7%);
+    grid-template-rows: repeat(4, 150px);
+    gap: 5px;
+    grid-template-areas: 
+    "concierto concierto1 concierto1 concierto1"
+    "concierto concierto2 concierto2 concierto2"
+    "concierto concierto3 concierto3 concierto3"
+    "pagar pagar pagar pagar"
+    ;
+}
+.concierto1{
+    grid-area: concierto1;
+    @include estilos-fechas;
+    
+    
+        .fecha-1{
+            text-align: center;
+            background-color:  rgba(255, 0, 0, .8);
+            border: 2px black solid;
+            border-radius: 15px;
+            border-style: outset;
+            width: 80px;
+            border-radius: 20px;
+            height: 70px;
+            padding: 10px;
+        }
+        .descripcion{
+            text-align: center;
+        }
+        a{
+            background-color: $color2;
+            width: 80px;
+            border-radius: 20px;
+            height: 70px;
+            padding: 10px;
+            &:hover{
+                border-top: black solid 2px;
+                border-left: black solid 2px;
+                img{
+                    animation: chango 1s infinite linear alternate;
+                }
+            }
+            
+            img{
+                height: 60px ;
+                
+            }
+        }
+    
+
+}
+
+.concierto2{
+    grid-area: concierto2;
+    @include estilos-fechas;
+    .fecha-1{
+        text-align: center;
+        background-color:  rgba(255, 0, 0, .8);
+        border: 2px black solid;
+        border-radius: 15px;
+        border-style: outset;
+        width: 80px;
+        border-radius: 20px;
+        height: 70px;
+        padding: 10px;
+    }
+    .descripcion{
+        text-align: center;
+    }
+    a{
+        background-color: $color2;
+        width: 80px;
+        border-radius: 20px;
+        height: 70px;
+        padding: 10px;
+        &:hover{
+            border-top: black solid 2px;
+            border-left: black solid 2px;
+            img{
+                animation: chango 1s infinite linear alternate;
+            }
+        }
+        
+        img{
+            height: 60px ;
+            
+        }
+    }
+    
+}
+.concierto3{
+    grid-area: concierto3;
+    @include estilos-fechas;
+    .fecha-1{
+        text-align: center;
+        background-color: rgba(255, 0, 0, .8);
+        border: 2px black solid;
+        border-radius: 15px;
+        border-style: outset;
+        width: 80px;
+        border-radius: 20px;
+        height: 70px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .descripcion{
+        text-align: center;
+    }
+    a{
+        background-color: $color2;
+        width: 80px;
+        border-radius: 20px;
+        height: 70px;
+        padding: 10px;
+        &:hover{
+            border-top: black solid 2px;
+            border-left: black solid 2px;
+            img{
+                animation: chango 1s infinite linear alternate;
+            }
+        }
+        
+        img{
+            height: 60px ;
+            
+        }
+    }
+}
+.pagar{
+    grid-area: pagar;
+    background-image: url(/assets/img/aside/mercadopago-og.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    padding-left: 15%;
+    margin-right: 10%;
+    margin-left: 25%;
+    margin-top: 20px;
+    
+    border: 2px $color1 solid;
+    border-radius: 15px;
+    animation: mercado 5s infinite;
+}
+
+@keyframes mercado{
+    from{
+
+    } to {
+        background-image: url(/assets/img/aside/MasterCard.jpg);
+    }
+}
+
+.concierto{
+    grid-area: concierto;
+    padding: 5px;
+    width: fit-content;
+    border: 3px white solid;
+    border-radius: 15px;
+    border-style: outset;
+    width: 105%;
+    background-color: rgba(0,0,0,0.9);
+    margin-left: 30px;
+    text-align: center;
+    .fecha{
+        height: 100px;
+        margin-top: 10px;
+        text-align: center;
+        color: $color2;
+        h2{
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            background-color: rgb(255, 0, 0); 
+        }
+        .compra{
+            background-color: rgba(255, 0, 0, .8);
+            border: 1px white solid;
+            display: flex;
+            align-items: center;
+            color: red;
+            width: 40%;
+            border-radius: 20px;
+            height: 50px;
+            margin-left: 30%;
+            padding: 10px;
+            &:hover{
+                background-color: rgb(255, 0, 0);
+                width: 63%;
+                margin-left: 18%;
+                border: 1.5px white solid;
+                a{
+                    margin-left: 38%;
+                    img{
+                        animation: chango 1s infinite linear alternate;
+                    }
+                }
+                
+            }
+            a{
+                margin-left: 30%;
+
+                img{
+                height: 45px;
+            }
+                
+            }
+            
+        }
+    }
+    .direccion{
+        color: $color2;
+        h3{
+            text-decoration: overline;
+            margin-top: 5px;
+        }
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+    .mapa{
+        height: 250px;
+        width: 220px;
+        margin: auto;
+    }
+}
+
+@keyframes chango {
+    from{transform: rotate(8deg);} to{
+        transform: rotate(-8deg);
+    }
+    
+}
+
+@media screen and (max-width: 320px)
+{
+    
+.grid-novedades{
+    display: grid;
+    border: 2px $color1 solid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas: 
+    "historia historia"
+    "novedad-5 novedad-2"
+    "novedad-3 novedad-1"
+    "novedad-4 novedad-4"
+    ;
+}
+.historia{
+    grid-area: historia;
+    font-family: $font-family2; 
+    color: $color2;
+    font-weight: $font-weight;
+    padding: 5px;
+    width: fit-content;
+    font-size:xx-small;
+
+}
+.historia-1{
+    text-align: center;
+    font-size: small;
+}
+.novedad-1{
+    grid-area: novedad-1;
+}
+.novedad-2{
+    grid-area: novedad-2;
+    background-color: #1465bb;
+    font-family:$font-family2; 
+    color: $color2;
+    font-weight: $font-weight;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.novedad-3{
+    grid-area: novedad-3;
+    background-color: #bd0003;
+    font-family:$font-family2; 
+    color:$color2;
+    font-weight: $font-weight;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.novedad-4{
+    grid-area: novedad-4;
+    font-family: $font-family2; 
+    color: $color1;
+    font-weight: $font-weight;
+    text-align:center;
+    padding: 40px;
+    font-size: small;
+}
+.novedad-5{
+    grid-area: novedad-5;
+}
+}
+
