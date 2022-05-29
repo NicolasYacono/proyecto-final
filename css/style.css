@@ -1,62 +1,9 @@
-<<<<<<< HEAD
-=======
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@200&family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik+Glitch&display=swap");
->>>>>>> rama-trabajo
 * {
   margin: 0;
   padding: 0; }
 
-<<<<<<< HEAD
-.header-footer, header, footer {
-  background-color: #eca50a;
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px; }
-
-.header-footer, header, footer {
-  background-color: #eca50a;
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px; }
-
-header nav {
-  display: flex;
-  justify-content: space-between; }
-  header nav a {
-    text-decoration: none;
-    font-family: verdana; }
-
-.header-footer, header, footer {
-  background-color: #eca50a;
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px; }
-
-section {
-  width: 100%; }
-  section article {
-    width: 100%; }
-    section article p {
-      font-family: verdana;
-      line-height: 1.5;
-      font-style: italic;
-      font-weight: bold;
-      text-align: center; }
-
-.header-footer, header, footer {
-  background-color: #eca50a;
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px; }
-
-footer {
-  display: flex;
-  justify-content: space-between; }
-  footer a {
-    text-decoration: none;
-    font-family: verdana; }
-=======
 .main-contacto {
   margin: 20px 50px 20px 250px;
   border-radius: 15px;
@@ -816,4 +763,3 @@ footer {
         margin-top: 10px; }
   footer .derechos {
     text-align: center; }
->>>>>>> rama-trabajo
