@@ -28,7 +28,8 @@
     iframe{
         width: 90%;
         border-radius: 15px;
-        margin: 50px 30px 50px 20px;
+        margin: 30px 10px 30px 10px;
+        height: 200px;
         
     }
     .section1{
@@ -74,7 +75,7 @@
             height: 300px;
             width: 95%;
             border-radius: 15px;
-            margin: 50px 30px 50px 20px;
+            margin: 30px 10px 30px 20px;
             
         }
         .section1{
@@ -118,4 +119,113 @@
             }
             
         }
+}
+
+@media screen and (max-width: 320px){
+    .grid-disco{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2, 800px);
+    gap: 5px;
+    margin: 2px;
+    grid-template-areas: 
+    "disco1"
+    "disco2"
+    ;
+    }
+    .disco1{
+        grid-area: disco1;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        border-radius: 15px;
+        background-color: rgba(0,0,0,0.7);
+        padding-top:5px;
+        padding-bottom: 5px;
+        margin: 5px;
+        margin-bottom: 20px;
+        iframe{
+        width: 95%;
+        border-radius: 15px;
+        margin-left: 7px;
+        
+        }
+        .section1{
+        color: white;
+        width: 200px;
+        height: 300px;
+        background-color: rgba(255, 0, 0, 0.6);
+        border-radius: 15px;
+        margin-top: 5px;
+        margin-left: 40px;
+            .columna1{
+             font-size: 15px;
+             color: white;
+             width: 100%;
+        }
+            .fila1{
+             padding: 5px;
+             margin-left: 5px;
+             font-size: 15px;
+            td{
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+    .masdisco{
+        text-align: center;
+        color: white;
+        p{
+            padding: 5px;
+        }
+    }
+
+    }
+    .disco2{
+        grid-area: disco2;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        border-radius: 15px;
+        background-color: rgba(0,0,0,0.7);
+        padding-top:5px;
+        padding-bottom: 5px;
+        img{
+            height: 200px;
+            width: 85%;
+            border-radius: 15px;
+        }
+        .section1{
+        color: white;
+        width: 200px;
+        height: 400px;
+        background-color: rgba(0, 128, 0, 0.5);
+        border-radius: 15px;
+        margin-top: 5px;
+        margin-left: 40px;
+            .columna1{
+             font-size: 15px;
+             color: white;
+             width: 100%;
+        }
+            .fila1{
+             padding: 5px;
+             margin-left: 5px;
+             font-size: 15px;
+            td{
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+    .masdisco{
+        text-align: center;
+        color: white;
+        p{
+            padding: 5px;
+        }
+    }
+    }
+
 }
