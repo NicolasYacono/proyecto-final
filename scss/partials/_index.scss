@@ -22,6 +22,7 @@ header{
     font-family: $font-family1;
     color: $color1;
     margin-bottom: 10px;
+    margin-left: 20px;
         .imagenes{
             margin-left: 20px;
             margin-top: 20px;
@@ -43,7 +44,7 @@ header{
     color: $color1;
     .barra-de-navegacion{    
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         list-style-type: none;
             a{
                 font-size: large;
@@ -472,13 +473,13 @@ header{
 
 footer{
     width: 100%;
+    margin-top: 50px;
     padding: 10px 0px;
     background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     font-family: $font-family2;
-   
     .pie-de-pagina{
         display: flex;
         flex-wrap: wrap;
