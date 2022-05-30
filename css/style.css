@@ -374,50 +374,176 @@
 @media screen and (max-width: 320px) {
   .grid-novedades {
     display: grid;
-    border: 2px black solid;
+    border: none;
+    margin: 0;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 150px);
-    grid-template-areas: "historia historia" "novedad-5 novedad-2" "novedad-3 novedad-1" "novedad-4 novedad-4"; }
-  .historia {
-    grid-area: historia;
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
-    font-weight: bold;
+    grid-template-rows: repeat(6, 250px);
+    grid-template-areas: "concierto concierto" "concierto concierto" "concierto1 concierto1" "concierto2 concierto2" "concierto3 concierto3" "pagar pagar"; }
+  .concierto1 {
+    grid-area: concierto1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 25px; }
+    .concierto1 .fecha-1 {
+      background-color: rgba(255, 0, 0, 0.8);
+      border: 2px black solid;
+      border-radius: 15px;
+      border-style: outset;
+      width: 50%;
+      border-radius: 20px;
+      height: fit-content;
+      padding: 5px;
+      margin-left: 25%; }
+    .concierto1 .descripcion {
+      text-align: center;
+      font-size: 13px; }
+    .concierto1 a {
+      background-color: whitesmoke;
+      width: 80px;
+      border-radius: 20px;
+      height: 60px;
+      margin-left: 35%;
+      padding: 10px; }
+      .concierto1 a:hover {
+        border-top: black solid 2px;
+        border-left: black solid 2px; }
+        .concierto1 a:hover img {
+          animation: chango 1s infinite linear alternate; }
+      .concierto1 a img {
+        margin-left: 10%;
+        height: 50px; }
+  .concierto2 {
+    grid-area: concierto2;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 25px; }
+    .concierto2 .fecha-1 {
+      background-color: rgba(255, 0, 0, 0.8);
+      border: 2px black solid;
+      border-radius: 15px;
+      border-style: outset;
+      width: 50%;
+      border-radius: 20px;
+      height: fit-content;
+      padding: 5px;
+      margin-left: 25%; }
+    .concierto2 .descripcion {
+      text-align: center;
+      font-size: 13px; }
+    .concierto2 a {
+      background-color: whitesmoke;
+      width: 80px;
+      border-radius: 20px;
+      height: 60px;
+      margin-left: 35%;
+      padding: 10px; }
+      .concierto2 a:hover {
+        border-top: black solid 2px;
+        border-left: black solid 2px; }
+        .concierto2 a:hover img {
+          animation: chango 1s infinite linear alternate; }
+      .concierto2 a img {
+        margin-left: 10%;
+        height: 50px; }
+  .concierto3 {
+    grid-area: concierto3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; }
+    .concierto3 .fecha-1 {
+      background-color: rgba(255, 0, 0, 0.8);
+      border: 2px black solid;
+      border-radius: 15px;
+      border-style: outset;
+      width: 50%;
+      border-radius: 20px;
+      height: fit-content;
+      padding: 5px;
+      margin-left: 25%; }
+    .concierto3 .descripcion {
+      text-align: center;
+      font-size: 13px; }
+    .concierto3 a {
+      background-color: whitesmoke;
+      width: 80px;
+      border-radius: 20px;
+      height: 60px;
+      margin-left: 35%;
+      padding: 10px; }
+      .concierto3 a:hover {
+        border-top: black solid 2px;
+        border-left: black solid 2px; }
+        .concierto3 a:hover img {
+          animation: chango 1s infinite linear alternate; }
+      .concierto3 a img {
+        margin-left: 10%;
+        height: 50px; }
+  .concierto {
+    grid-area: concierto;
     padding: 5px;
     width: fit-content;
-    font-size: xx-small; }
-  .historia-1 {
-    text-align: center;
-    font-size: small; }
-  .novedad-1 {
-    grid-area: novedad-1; }
-  .novedad-2 {
-    grid-area: novedad-2;
-    background-color: #1465bb;
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 10px; }
-  .novedad-3 {
-    grid-area: novedad-3;
-    background-color: #bd0003;
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: right;
-    padding-right: 10px;
-    padding-top: 10px; }
-  .novedad-4 {
-    grid-area: novedad-4;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 40px;
-    font-size: small; }
-  .novedad-5 {
-    grid-area: novedad-5; } }
+    border: 3px white solid;
+    border-radius: 15px;
+    border-style: outset;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center; }
+    .concierto .fecha {
+      height: 50px;
+      margin-top: 10px;
+      text-align: center;
+      color: whitesmoke; }
+      .concierto .fecha h2 {
+        font-size: 15px;
+        width: 50%;
+        padding: 5px;
+        margin-left: 25%;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: red; }
+      .concierto .fecha .compra {
+        background-color: rgba(255, 0, 0, 0.8);
+        border: 1px white solid;
+        display: flex;
+        align-items: center;
+        color: red;
+        width: 70px;
+        border-radius: 20px;
+        height: 40px;
+        margin-left: 38%;
+        padding: 10px; }
+        .concierto .fecha .compra:hover {
+          background-color: red;
+          width: 50%;
+          margin-left: 25%;
+          border: 1.5px white solid; }
+          .concierto .fecha .compra:hover a {
+            margin-left: 38%; }
+            .concierto .fecha .compra:hover a img {
+              animation: chango 1s infinite linear alternate; }
+        .concierto .fecha .compra a {
+          margin-left: 5px; }
+          .concierto .fecha .compra a img {
+            height: 40px; }
+    .concierto .direccion {
+      color: whitesmoke;
+      font-size: 15px;
+      margin-top: 80px; }
+      .concierto .direccion h3 {
+        text-decoration: overline; }
+      .concierto .direccion h4 {
+        margin-bottom: 10px; }
+    .concierto .mapa {
+      height: 230px;
+      width: 200px;
+      margin: auto; }
+  .pagar {
+    grid-area: pagar;
+    margin: 30px;
+    width: 250px;
+    height: 150px; } }
 
 .container-integrantes {
   width: 100%;
