@@ -59,6 +59,67 @@
         background-color: red;
         width: 100px; }
 
+@media screen and (max-width: 320px) {
+  .main-contacto {
+    margin: 20px 50px 20px 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 5px;
+    margin: 10%;
+    border: 2px white solid;
+    border-style: outset;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); }
+    .main-contacto .formulario-contacto {
+      color: black;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.6);
+      outline: none;
+      font-size: 10px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      border-radius: 15px;
+      padding: auto; }
+      .main-contacto .formulario-contacto .fieldset1 {
+        margin: 5px;
+        border: none; }
+        .main-contacto .formulario-contacto .fieldset1 .legend1 {
+          margin-left: 25%;
+          text-align: center;
+          margin-bottom: 10px; }
+        .main-contacto .formulario-contacto .fieldset1 .label-apellido {
+          padding-left: 20px; }
+        .main-contacto .formulario-contacto .fieldset1 input {
+          color: black;
+          font-size: 10px; }
+    .main-contacto .div-contacto {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      padding: 5px;
+      margin-top: 10px;
+      font-size: 10px; }
+    .main-contacto .enviar {
+      padding: 5px;
+      display: flex;
+      flex-direction: row; }
+      .main-contacto .enviar input {
+        outline: none;
+        padding: 5px;
+        margin: 15px;
+        background-color: black;
+        color: whitesmoke;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 10px; }
+        .main-contacto .enviar input:hover {
+          background-color: red;
+          width: 70px; } }
+
 .grid-disco {
   display: grid;
   grid-template-columns: repeat(3, 32%);
