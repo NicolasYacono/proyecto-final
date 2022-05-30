@@ -152,6 +152,91 @@
     .disco2 .masdisco p {
       padding-top: 50px; }
 
+@media screen and (max-width: 320px) {
+  .grid-disco {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2, 800px);
+    gap: 5px;
+    margin: 2px;
+    grid-template-areas: "disco1" "disco2"; }
+  .disco1 {
+    grid-area: disco1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    margin-bottom: 20px; }
+    .disco1 iframe {
+      width: 95%;
+      border-radius: 15px;
+      margin-left: 7px; }
+    .disco1 .section1 {
+      color: white;
+      width: 200px;
+      height: 300px;
+      background-color: rgba(255, 0, 0, 0.6);
+      border-radius: 15px;
+      margin-top: 5px;
+      margin-left: 40px; }
+      .disco1 .section1 .columna1 {
+        font-size: 15px;
+        color: white;
+        width: 100%; }
+      .disco1 .section1 .fila1 {
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 15px; }
+        .disco1 .section1 .fila1 td {
+          padding: 5px;
+          text-align: center; }
+    .disco1 .masdisco {
+      text-align: center;
+      color: white; }
+      .disco1 .masdisco p {
+        padding: 5px; }
+  .disco2 {
+    grid-area: disco2;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .disco2 img {
+      height: 200px;
+      width: 85%;
+      border-radius: 15px; }
+    .disco2 .section1 {
+      color: white;
+      width: 200px;
+      height: 400px;
+      background-color: rgba(0, 128, 0, 0.5);
+      border-radius: 15px;
+      margin-top: 5px;
+      margin-left: 40px; }
+      .disco2 .section1 .columna1 {
+        font-size: 15px;
+        color: white;
+        width: 100%; }
+      .disco2 .section1 .fila1 {
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 15px; }
+        .disco2 .section1 .fila1 td {
+          padding: 5px;
+          text-align: center; }
+    .disco2 .masdisco {
+      text-align: center;
+      color: white; }
+      .disco2 .masdisco p {
+        padding: 5px; } }
+
 .grid-novedades {
   display: grid;
   border: none;
