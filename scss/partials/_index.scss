@@ -93,10 +93,10 @@ header{
                 font-size: 12px;
                 h2{
                     text-decoration: wavy;
-                    color: red;
+                    color: rgb(255, 71, 102);
                 }
                 h3{
-                    color: red;
+                    color: rgb(255, 71, 102);
                     text-decoration: overline;
                 }
             }
@@ -141,33 +141,34 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-left: 60%;
+                margin:10px 10px 0 60%;
                 font-family: $font-family2;
-                font-size: small;
+                font-size: 10px;
                 font-weight: $font-weight;
+                background-color:rgba(149, 138, 191, 0.5) ;
+                border-radius: 15px;
+                height: 65px;
             }
                 .lasala{
                     text-decoration: overline;
                 }
                 .entradas{
                     font-size: larger;
-                    margin-top: 5px;
+                    margin-top: 7px;
                     padding: 5px;
-                    background-color: rgba(11, 135, 167, 0.3);
+                    background-color: rgba(149, 138, 191, 0.5);
                     border-radius: 20px;
                     text-decoration: none;
                     color: whitesmoke;
                     box-shadow: 3px 3px 3px #373c3c;
-                    animation: entradas .10s infinite;
+                    animation: entradas 10s infinite;
                     
                 }
         
     }
     @keyframes entradas {
-        0% {
-            background-color: rgba(11, 135, 167, 0.3)
-        } 50% {
-            background-color: rgba(255, 0, 0, .5);
+        50% {
+            background-color:rgb(255, 71, 102);
         }
     }
     .gregory{
@@ -200,7 +201,7 @@ header{
                 padding: auto;
                 margin-top: 30px;
                 margin-left: 45%;
-                font-size: x-small;
+                font-size: small;
                 width: 50%;
                 border-radius: 15px;
                 
