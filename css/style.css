@@ -754,12 +754,11 @@ header {
   font-size: 25px;
   font-family: "Fugaz One", cursive;
   color: black;
-  margin-bottom: 10px;
   margin-left: 20px; }
   header img {
-    height: 100px;
-    margin-bottom: 10px;
-    margin-right: 20px; }
+    height: 90px;
+    margin-right: 20px;
+    margin-top: 5px; }
 
 .navegador1 {
   color: black; }
@@ -772,9 +771,7 @@ header {
       font-family: "Fugaz One", cursive;
       color: black;
       text-decoration: overline;
-      margin-left: 30%;
-      text-transform: uppercase;
-      margin-top: 5px; }
+      margin-left: 30%; }
       .navegador1 .barra-de-navegacion a:hover {
         color: whitesmoke; }
 
@@ -784,8 +781,8 @@ header {
   color: whitesmoke;
   grid-template-columns: 2fr 2fr 0.5fr;
   grid-template-rows: repeat(3, 250px);
-  gap: 15px;
-  margin: 10px;
+  gap: 25px;
+  margin: 0 20px 0 20px;
   grid-template-areas: "video-1 video-2 publicidad" "gregory gregory publicidad" "spotify whatsapp publicidad"; }
 
 .video-1 {
@@ -806,22 +803,23 @@ header {
     text-align: center;
     color: black;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    width: 65%;
+    width: 40%;
     font-size: 12px; }
     .video-1 .titulo-1 h2 {
       text-decoration: wavy;
-      color: #ff4766; }
+      color: #ff4766;
+      font-family: "Fugaz One", cursive; }
     .video-1 .titulo-1 h3 {
       color: #ff4766;
-      text-decoration: overline; }
+      text-decoration: overline;
+      font-family: "Poppins", sans-serif; }
   .video-1 .boton-mystic {
     margin-top: 5px;
-    margin-left: 32%;
-    width: 35%;
+    margin-left: 35%;
+    width: 30%;
     height: 40px;
     background-color: whitesmoke;
     border-radius: 5px;
@@ -855,20 +853,25 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 10px 10px 0 60%;
-    font-family: "Poppins", sans-serif;
     font-size: 10px;
     font-weight: bold;
     background-color: rgba(149, 138, 191, 0.5);
     border-radius: 15px;
     height: 65px; }
+  .video-2 h2 {
+    font-family: "Fugaz One", cursive; }
   .video-2 .lasala {
-    text-decoration: overline; }
+    text-decoration: overline;
+    font-family: "Poppins", sans-serif; }
+  .video-2 h3 {
+    font-family: "Poppins", sans-serif; }
   .video-2 .entradas {
+    font-family: "Fugaz One", cursive;
     font-size: larger;
     margin-top: 7px;
     padding: 5px;
     background-color: rgba(149, 138, 191, 0.5);
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     color: whitesmoke;
     box-shadow: 3px 3px 3px #373c3c;
@@ -892,22 +895,30 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   color: black;
-  font-style: "Poppins", sans-serif;
-  background-color: rgba(128, 128, 128, 0.4);
-  font-weight: bolder; }
+  background-color: rgba(255, 71, 102, 0.3); }
   .gregory .gregory-2 {
     font-size: large;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 40%;
-    margin-left: 48%;
-    text-align: center; }
+    margin-left: 35%;
+    text-align: left;
+    font-family: "Fugaz One", cursive; }
   .gregory .gregory-3 {
     padding: auto;
-    margin-top: 30px;
-    margin-left: 45%;
+    margin-top: 20px;
+    margin-left: 35%;
     font-size: small;
     width: 50%;
-    border-radius: 15px; }
+    border-radius: 15px;
+    text-align: left; }
+  .gregory a {
+    margin-left: 85%;
+    margin-top: 5px;
+    font-size: "Poppins", sans-serif;
+    color: black;
+    text-decoration: overline; }
+    .gregory a:hover {
+      color: white; }
 
 .publicidad {
   grid-area: publicidad;
@@ -915,10 +926,11 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-  width: 120px;
+  width: 100px;
   border-radius: 15px;
-  height: 70%;
-  margin-top: 100px;
+  height: 90%;
+  border: 2px black solid;
+  margin: 0 0 0 40px;
   animation: pelagatos 10s infinite linear alternate;
   background-color: #fff200; }
 
@@ -933,7 +945,7 @@ header {
   justify-content: center;
   grid-area: spotify;
   background-color: #1ed671;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 30%;
   width: 60%;
   height: 60%;
@@ -967,7 +979,7 @@ header {
   grid-area: whatsapp;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 10%;
   background-color: #25d366;
   width: 60%;
@@ -1010,7 +1022,7 @@ header {
     grid-template-areas: "video-1 video-2"  "gregory publicidad" "spotify whatsapp"; }
   .video-1 {
     grid-area: video-1;
-    width: fit-content;
+    width: 100%;
     height: auto;
     animation: movimiento 15s infinite linear alternate; }
     .video-1 .titulo-1 {
@@ -1073,7 +1085,7 @@ header {
       font-size: 4px;
       padding: auto;
       margin-top: 30px;
-      margin-left: -145;
+      margin-left: -150;
       margin-top: 90%;
       width: 100%;
       border-radius: 15px; }
@@ -1084,9 +1096,9 @@ header {
     margin: 0; }
   .spotify {
     grid-area: spotify;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 15px 0 15px 0; }
+    margin: 15px 0px 15px 10px; }
     .spotify:hover {
       display: flex;
       flex-direction: column;
@@ -1097,9 +1109,9 @@ header {
         height: 70px; }
   .whatsapp {
     grid-area: whatsapp;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 15px 0 15px 0; }
+    margin: 15px 0px 15px 15px; }
     .whatsapp:hover {
       display: flex;
       flex-direction: column;
@@ -1111,7 +1123,6 @@ header {
 
 footer {
   width: 100%;
-  margin-top: 50px;
   padding: 10px 0px;
   background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
   background-size: cover;

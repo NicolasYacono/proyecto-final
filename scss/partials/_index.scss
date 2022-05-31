@@ -22,12 +22,11 @@ header{
     font-size: 25px;
     font-family: $font-family1;
     color: $color1;
-    margin-bottom: 10px;
     margin-left: 20px;
         img{
-            height: 100px;
-            margin-bottom: 10px;
+            height: 90px;
             margin-right: 20px;
+            margin-top: 5px;
         }
 
 
@@ -39,15 +38,16 @@ header{
         text-align: left;
         margin-bottom: 50px;
         list-style-type: none;
+
             a{
                 font-size: large;
                 font-family: $font-family1;
                 color: $color1;
                 text-decoration: overline;
-                margin-left: 30%;
-                text-transform: uppercase;
-                margin-top: 5px; 
-                    &:hover{color: $color2;}
+                margin-left: 30%; 
+                    &:hover{
+                        color: $color2;
+                    }
             }
     }
 }
@@ -58,8 +58,8 @@ header{
     color: $color2;
     grid-template-columns: 2fr 2fr 0.5fr;
     grid-template-rows: repeat(3, 250px);
-    gap: 15px;
-    margin: 10px;
+    gap: 25px;
+    margin: 0 20px 0 20px;
     grid-template-areas: 
     "video-1 video-2 publicidad"
     "gregory gregory publicidad"
@@ -85,25 +85,26 @@ header{
                 text-align: center;
                 color: $color1;
                 text-decoration: none;
-                font-family: $font-family2;
                 font-weight: $font-weight;
                 background-color: rgba(0, 0, 0, .7);
                 border-radius: 10px;
-                width: 65%;
+                width: 40%;
                 font-size: 12px;
                 h2{
                     text-decoration: wavy;
                     color: rgb(255, 71, 102);
+                    font-family: $font-family1;
                 }
                 h3{
                     color: rgb(255, 71, 102);
                     text-decoration: overline;
+                    font-family: $font-family2;
                 }
             }
             .boton-mystic{
                 margin-top: 5px; 
-                margin-left: 32%;
-                width: 35%;
+                margin-left: 35%;
+                width: 30%;
                 height: 40px;
                 background-color: whitesmoke;
                 border-radius: 5px;
@@ -142,25 +143,33 @@ header{
                 flex-direction: column;
                 align-items: center;
                 margin:10px 10px 0 60%;
-                font-family: $font-family2;
                 font-size: 10px;
                 font-weight: $font-weight;
                 background-color:rgba(149, 138, 191, 0.5) ;
                 border-radius: 15px;
                 height: 65px;
             }
+                h2{
+                    font-family: $font-family1;
+                }
                 .lasala{
                     text-decoration: overline;
+                    font-family: $font-family2;
                 }
+                h3{
+                    font-family: $font-family2;
+                }
+                
                 .entradas{
+                    font-family: $font-family1;
                     font-size: larger;
                     margin-top: 7px;
                     padding: 5px;
                     background-color: rgba(149, 138, 191, 0.5);
-                    border-radius: 20px;
+                    border-radius: 15px;
                     text-decoration: none;
                     color: whitesmoke;
-                    box-shadow: 3px 3px 3px #373c3c;
+                    box-shadow: 3px 3px 3px rgb(55, 60, 60);
                     animation: entradas 10s infinite;
                     
                 }
@@ -185,27 +194,35 @@ header{
         flex-direction: column;
         flex-wrap: wrap;
         color: $color1;
-        font-style: $font-family2;
-        background-color: rgba(128, 128, 128, .4) ;
-        font-weight: bolder;
+        background-color :rgba(255, 71, 102, 0.3);;
             .gregory-2{
                
                 font-size: large;
-                margin-top: 20px;
+                margin-top: 15px;
                 width: 40%;
-                margin-left: 48%;
-                text-align: center;
+                margin-left: 35%;
+                text-align: left;
+                font-family: $font-family1;
             
             }
             .gregory-3{
                 padding: auto;
-                margin-top: 30px;
-                margin-left: 45%;
+                margin-top: 20px;
+                margin-left: 35%;
                 font-size: small;
                 width: 50%;
                 border-radius: 15px;
-                
-                
+                text-align: left;      
+            }
+            a{
+                margin-left: 85%;
+                margin-top: 5px;
+                font-size: $font-family2;
+                color: $color1;
+                text-decoration: overline;
+                &:hover{
+                    color: white;
+                }
             }
 
     }
@@ -215,10 +232,11 @@ header{
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: contain ;
-        width: 120px;
+        width: 100px;
         border-radius: 15px;
-        height: 70%;
-        margin-top: 100px;
+        height: 90%;
+        border: 2px black solid;
+        margin: 0 0 0 40px;
         animation: pelagatos 10s infinite linear alternate;
         background-color: rgb(255, 242, 0);
     }
@@ -232,7 +250,7 @@ header{
         justify-content: center;
         grid-area: spotify;
         background-color: rgb(30, 214, 113);
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 30%;
         width: 60%;
         height: 60%;
@@ -276,7 +294,7 @@ header{
         grid-area: whatsapp;
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 25px;
         margin-left: 10%;
         background-color: rgb(37,211,102);
         width: 60%;
@@ -332,7 +350,7 @@ header{
 
     .video-1{
         grid-area: video-1;
-        width: fit-content;
+        width: 100%;
         height: auto;
         animation: movimiento 15s infinite linear alternate;
         .titulo-1{
@@ -414,7 +432,7 @@ header{
             font-size: 4px;
             padding: auto;
             margin-top: 30px;
-            margin-left: -145;
+            margin-left: -150;
             margin-top: 90%;
             width: 100%;
             border-radius: 15px;
@@ -428,9 +446,9 @@ header{
     }
     .spotify{
         grid-area: spotify;
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 15px 0 15px 0;
+        margin: 15px 0px 15px 10px;
         &:hover{
             display: flex;
             flex-direction: column;
@@ -446,9 +464,9 @@ header{
     }
     .whatsapp{
         grid-area: whatsapp;
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 15px 0 15px 0;
+        margin: 15px 0px 15px 15px;
         &:hover{
             display: flex;
             flex-direction: column;
@@ -467,7 +485,6 @@ header{
 
 footer{
     width: 100%;
-    margin-top: 50px;
     padding: 10px 0px;
     background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
     background-size: cover;
