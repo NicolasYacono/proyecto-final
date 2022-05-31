@@ -302,10 +302,11 @@
 .grid-novedades {
   display: grid;
   border: none;
-  margin-left: 10%;
-  grid-template-columns: repeat(4, 24.7%);
+  grid-template-columns: repeat(4, 24%);
   grid-template-rows: repeat(4, 150px);
-  gap: 5px;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   grid-template-areas: "concierto concierto1 concierto1 concierto1" "concierto concierto2 concierto2 concierto2" "concierto concierto3 concierto3 concierto3" "pagar pagar pagar pagar"; }
 
 .concierto1 {
@@ -322,10 +323,11 @@
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.4);
   font-family: "Poppins", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 25px; }
   .concierto1 .fecha-1 {
     text-align: center;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #ff4766;
     border: 2px black solid;
     border-radius: 15px;
     border-style: outset;
@@ -334,13 +336,15 @@
     height: 70px;
     padding: 10px; }
   .concierto1 .descripcion {
-    text-align: center; }
+    text-align: center;
+    font-family: "Poppins", sans-serif; }
   .concierto1 a {
     background-color: white;
     width: 70px;
     border-radius: 20px;
     height: 70px;
-    padding: 10px; }
+    padding: 10px;
+    border: 1.5px #ff4766 solid; }
     .concierto1 a:hover {
       border-top: black solid 2px;
       border-left: black solid 2px; }
@@ -363,10 +367,11 @@
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.4);
   font-family: "Poppins", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 25px; }
   .concierto2 .fecha-1 {
     text-align: center;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #ff4766;
     border: 2px black solid;
     border-radius: 15px;
     border-style: outset;
@@ -381,7 +386,8 @@
     width: 70px;
     border-radius: 20px;
     height: 70px;
-    padding: 10px; }
+    padding: 10px;
+    border: 1.5px #ff4766 solid; }
     .concierto2 a:hover {
       border-top: black solid 2px;
       border-left: black solid 2px; }
@@ -404,17 +410,18 @@
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.4);
   font-family: "Poppins", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 25px; }
   .concierto3 .fecha-1 {
     text-align: center;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #ff4766;
     border: 2px black solid;
     border-radius: 15px;
     border-style: outset;
     width: 80px;
     border-radius: 20px;
     height: 70px;
-    padding: 10px;
+    padding: 5px;
     margin: 5px; }
   .concierto3 .descripcion {
     text-align: center; }
@@ -423,7 +430,8 @@
     width: 70px;
     border-radius: 20px;
     height: 70px;
-    padding: 10px; }
+    padding: 10px;
+    border: 1.5px #ff4766 solid; }
     .concierto3 a:hover {
       border-top: black solid 2px;
       border-left: black solid 2px; }
@@ -437,15 +445,12 @@
   background-image: url(/assets/img/aside/mercadopago-og.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: local;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  width: 450px;
-  padding-left: 15%;
-  margin-right: 10%;
-  margin-left: 25%;
   margin-top: 20px;
+  margin-left: 30%;
+  width: 40%;
+  height: 100%;
   border: 2px black solid;
   border-radius: 15px;
   animation: mercado 5s infinite; }
@@ -457,14 +462,12 @@
 
 .concierto {
   grid-area: concierto;
-  padding: 5px;
   width: fit-content;
   border: 3px white solid;
   border-radius: 15px;
   border-style: outset;
-  width: 105%;
-  background-color: rgba(0, 0, 0, 0.9);
-  margin-left: 30px;
+  width: 100%;
+  background-color: rgba(149, 138, 191, 0.8);
   text-align: center; }
   .concierto .fecha {
     height: 100px;
@@ -473,12 +476,14 @@
     color: whitesmoke; }
     .concierto .fecha h2 {
       padding: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       border-radius: 15px;
-      background-color: red; }
+      background-color: white;
+      color: black;
+      border: 1.5px white solid; }
     .concierto .fecha .compra {
       background-color: white;
-      border: 2px red solid;
+      border: 1.5px white solid;
       display: flex;
       align-items: center;
       width: 40%;
@@ -487,10 +492,10 @@
       margin-left: 30%;
       padding: 10px; }
       .concierto .fecha .compra:hover {
-        background-color: red;
+        background-color: #ff4766;
         width: 63%;
         margin-left: 18%;
-        border: 1.5px white solid; }
+        border: 2px white solid; }
         .concierto .fecha .compra:hover a {
           margin-left: 38%; }
           .concierto .fecha .compra:hover a img {
@@ -529,10 +534,9 @@
     grid-area: concierto1;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     margin-left: 25px; }
     .concierto1 .fecha-1 {
-      background-color: rgba(255, 0, 0, 0.8);
+      background-color: #ff4766;
       border: 2px black solid;
       border-radius: 15px;
       border-style: outset;
@@ -563,10 +567,9 @@
     grid-area: concierto2;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     margin-left: 25px; }
     .concierto2 .fecha-1 {
-      background-color: rgba(255, 0, 0, 0.8);
+      background-color: #ff4766;
       border: 2px black solid;
       border-radius: 15px;
       border-style: outset;
@@ -599,7 +602,7 @@
     flex-direction: column;
     margin-left: 25px; }
     .concierto3 .fecha-1 {
-      background-color: rgba(255, 0, 0, 0.8);
+      background-color: #ff4766;
       border: 2px black solid;
       border-radius: 15px;
       border-style: outset;
@@ -633,8 +636,7 @@
     border: 3px white solid;
     border-radius: 15px;
     border-style: outset;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(149, 138, 191, 0.8);
     text-align: center; }
     .concierto .fecha {
       height: 50px;
@@ -648,10 +650,9 @@
         margin-left: 25%;
         margin-bottom: 20px;
         border-radius: 15px;
-        background-color: red; }
+        background-color: white; }
       .concierto .fecha .compra {
         background-color: white;
-        border: 2px red solid;
         display: flex;
         align-items: center;
         color: red;
@@ -661,7 +662,7 @@
         margin-left: 38%;
         padding: 10px; }
         .concierto .fecha .compra:hover {
-          background-color: red;
+          background-color: #ff4766;
           width: 50%;
           margin-left: 25%;
           border: 1.5px white solid; }
@@ -687,7 +688,8 @@
       margin: auto; }
   .pagar {
     grid-area: pagar;
-    margin: 30px;
+    margin-top: 60px;
+    margin-left: 35px;
     width: 250px;
     height: 150px; } }
 
@@ -1124,6 +1126,7 @@ header {
 footer {
   width: 100%;
   padding: 10px 0px;
+  margin-top: 40px;
   background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
   background-size: cover;
   background-position: center center;
