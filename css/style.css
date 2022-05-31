@@ -750,14 +750,16 @@
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-size: 25px;
   font-family: "Fugaz One", cursive;
   color: black;
   margin-bottom: 10px;
   margin-left: 20px; }
   header img {
-    height: 45px;
-    margin: 12 12 12 20; }
+    height: 100px;
+    margin-bottom: 10px;
+    margin-right: 20px; }
 
 .navegador1 {
   color: black; }
