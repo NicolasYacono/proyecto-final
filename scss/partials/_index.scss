@@ -23,18 +23,9 @@ header{
     color: $color1;
     margin-bottom: 10px;
     margin-left: 20px;
-        .imagenes{
-            margin-left: 20px;
-            margin-top: 20px;
-            .vacio{
-                height: 15px;
-            }
-            .lleno{
-                height: 20px;
-            }
-            .explota{
-                height: 30px;
-            }
+        img{
+            height: 45px;
+            margin: 12 12 12 20;
         }
 
 
