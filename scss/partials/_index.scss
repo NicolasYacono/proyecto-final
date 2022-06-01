@@ -44,7 +44,7 @@ header{
                 font-family: $font-family1;
                 color: $color1;
                 text-decoration: overline;
-                margin-left: 30%; 
+                margin-left: 32%; 
                     &:hover{
                         color: $color2;
                     }
@@ -58,7 +58,7 @@ header{
     color: $color2;
     grid-template-columns: 2fr 2fr 0.5fr;
     grid-template-rows: repeat(3, 250px);
-    gap: 25px;
+    gap: 30px;
     margin: 0 20px 0 20px;
     grid-template-areas: 
     "video-1 video-2 publicidad"
@@ -215,14 +215,19 @@ header{
                 text-align: left;      
             }
             a{
-                margin-left: 85%;
-                margin-top: 5px;
-                font-size: $font-family2;
-                color: $color1;
-                text-decoration: overline;
-                &:hover{
-                    color: white;
+                margin-left: -70px;
+                margin-top: 200px;
+                text-decoration: none;
+                h2{
+                    font-size: $font-family2;
+                    font-size: 20px;
+                    color: $color1;
+                    text-decoration: overline;
+                    &:hover{
+                        color: white;
+                    }
                 }
+                
             }
 
     }
@@ -331,19 +336,59 @@ header{
         }
     }
 
+    
+
 @media screen and (max-width: 320px){
+
+
+    header{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: $font-family1;
+    color: $color1;
+        img{
+            height: 100px;
+            width: 100px;
+            margin-left: 0px;
+        }
+        
+        
+    }
+
+    .navegador1{
+        color: $color1;
+        .barra-de-navegacion{    
+            text-align: right;
+            margin-bottom: 50px;
+            list-style-type: none;
+    
+                a{
+                    font-size: 15px;
+                    font-family: $font-family1;
+                    color: $color1;
+                    text-decoration: overline;
+                    margin-right: 20px;
+                        &:hover{
+                            color: $color2;
+                        }
+                }
+        }
+    }
 
     .grid{
     display: grid;
     border: none;
     color: $color2;
     grid-template-columns: repeat(2, 49%);
-    grid-template-rows: repeat(3, 200px);
-    gap: 3px;
-    margin: 0;
+    grid-template-rows: repeat(5, 200px);
+    gap: 10px;
+    margin: 10px;
     grid-template-areas: 
-    "video-1 video-2" 
-    "gregory publicidad"
+    "video-1 video-1" 
+    "video-2 video-2"
+    "gregory gregory"
+    "publicidad publicidad"
     "spotify whatsapp"
     ;
     }
@@ -359,7 +404,7 @@ header{
             justify-content: center;
             margin: auto;
             font-size: 6px;
-            margin-top: 90%;
+            margin-top: 150px;
 
         }
         .boton-mystic{
@@ -398,44 +443,63 @@ header{
             align-items: center;
             margin-left: 50%;
             font-family: $font-family2;
-            font-size: 6px;
+            font-size: 7px;
             font-weight: $font-weight;
-            margin-top: 5%;
+            margin-top: 10px;
             h2{
                 font-size: 8px;
-                margin-left: 16px;
             }
             .entradas{
-                margin-left: 15px;
+                
                 padding: 2px;
                 box-shadow: none;
-                width: 50px;
+                width: 60px;
+                padding: 5px;
                 
             }
             
         }
     }
+    
+        /*VER ESTO*/
+
     .gregory{
         grid-area: gregory;
-        width: fit-content;
-        height: auto;
+        width: 100%;
+        height: 100%;
         background-image: url(/assets/img/los-jugos/grafica/Gregory-Morris-jamaica.jpg);
         margin: 0;
-        padding: 2px;
         .gregory-2{
-            font-size: 6px;
-            margin-top: 70%;
-            width: 100%;
-            margin-left: 0;
+            font-size: 8px;
+            margin-left: 5px;
+            margin-top: 5px;
+            color: white;
+            background-color: black;
+            border-radius: 15px;
+            padding: 3px;
+            text-align: center;
         }
         .gregory-3{
-            font-size: 4px;
-            padding: auto;
-            margin-top: 30px;
-            margin-left: -150;
-            margin-top: 90%;
-            width: 100%;
+            font-size: 0.5px;
+            color: white;
+            margin: 5px;
+        }
+        a{
+            margin-top: 160px;
+            text-decoration: none;
+            background-color: black;
+            border: 2px white solid;
             border-radius: 15px;
+            padding: 5px;
+            margin-right: 10px;
+            h2{
+                font-size: $font-family2;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                
+            }
         }
     }
    .publicidad{
