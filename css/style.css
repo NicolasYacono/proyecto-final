@@ -150,19 +150,25 @@
       width: 280px;
       border-radius: 15px; }
     .disco1 .arriba div {
-      margin-top: 100px;
+      margin-top: 62px;
       margin-left: 20px;
       color: white; }
       .disco1 .arriba div h2 {
-        font-size: 70px;
+        font-size: 55px;
         font-family: "Fugaz One", cursive; }
       .disco1 .arriba div h3 {
         font-family: "Poppins", sans-serif; }
-      .disco1 .arriba div img {
-        height: 30px;
-        width: 30px; }
+      .disco1 .arriba div .logos {
+        margin: 0;
+        margin-top: 45px; }
+        .disco1 .arriba div .logos img {
+          height: 40px;
+          width: 40px;
+          background-color: rgba(255, 71, 102, 0.7);
+          padding: 0.5px;
+          margin-bottom: 10px; }
       .disco1 .arriba div p {
-        margin-top: 15px;
+        margin-top: 5px;
         font-family: "Poppins", sans-serif;
         background-color: rgba(255, 71, 102, 0.7);
         border-radius: 15px;
@@ -200,19 +206,25 @@
       width: 300px;
       border-radius: 15px; }
     .disco2 .arriba div {
-      margin-top: 115px;
+      margin-top: 77px;
       margin-left: 20px;
       color: white; }
       .disco2 .arriba div h2 {
-        font-size: 60px;
+        font-size: 45px;
         font-family: "Fugaz One", cursive; }
       .disco2 .arriba div h3 {
         font-family: "Poppins", sans-serif; }
-      .disco2 .arriba div img {
-        height: 30px;
-        width: 30px; }
+      .disco2 .arriba div .logos {
+        margin: 0;
+        margin-top: 45px; }
+        .disco2 .arriba div .logos img {
+          height: 40px;
+          width: 40px;
+          background-color: rgba(0, 204, 142, 0.7);
+          padding: 0.5px;
+          margin-bottom: 10px; }
       .disco2 .arriba div p {
-        margin-top: 15px;
+        margin-top: 5px;
         font-family: "Poppins", sans-serif;
         background-color: rgba(0, 204, 142, 0.7);
         border-radius: 15px;
