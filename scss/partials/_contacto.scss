@@ -15,13 +15,16 @@
     border: 2px white solid;
     border-style: outset;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-
+    background-image: linear-gradient(to left, rgb(255, 71, 102), rgb(149, 138, 191));
+    
+    .acorde{
+        margin: -10 0 -10 0;
+    }
     .formulario-contacto{
         color: $color1;
         margin-bottom: 20px;
         margin-top: 10px;
-        background-color:  rgba(255, 255, 255, 0.6);
+        background-color:  rgba(255, 255, 255, 0.3);
         outline: none;
         font-family: $font-family2;
         font-weight: $font-weight;
@@ -64,12 +67,13 @@
             outline: none;
             padding: 5px;
             margin: 15px;
-            background-color: black;
-            color: $color2;
+            background-color: white;
+            color: $color1;
             font-family: $font-family2;
             font-weight: $font-weight;
             &:hover{
-                background-color: red;
+                background-color: black;
+                color: $color2;
                 width: 100px;
             }
             
@@ -93,8 +97,8 @@
         border: 2px white solid;
         border-style: outset;
         box-shadow: 20px 10px 20px rgba(0,0,0,0.5);
-        background-color: rgba(0, 0, 0, 0.5);
-    
+        background-image: linear-gradient(to left, rgb(255, 71, 102));
+        
         .formulario-contacto{
             color: $color1;
             margin-bottom: 20px;
@@ -146,14 +150,14 @@
                 outline: none;
                 padding: 5px;
                 margin: 15px;
-                background-color: black;
-                color: $color2;
+                background-color: white;
+                color: $color1;
                 font-family: $font-family2;
                 font-weight: $font-weight;
                 font-size: 10px;
                 &:hover{
-                    background-color: red;
-                    width: 70px;
+                    background-color: black;
+                    color: $color2;
                 }
                 
             }

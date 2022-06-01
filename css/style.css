@@ -15,12 +15,14 @@
   border: 2px white solid;
   border-style: outset;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-image: linear-gradient(to left, #ff4766, #958abf); }
+  .main-contacto .acorde {
+    margin: -10 0 -10 0; }
   .main-contacto .formulario-contacto {
     color: black;
     margin-bottom: 20px;
     margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     outline: none;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -51,12 +53,13 @@
       outline: none;
       padding: 5px;
       margin: 15px;
-      background-color: black;
-      color: whitesmoke;
+      background-color: white;
+      color: black;
       font-family: "Poppins", sans-serif;
       font-weight: bold; }
       .main-contacto .enviar input:hover {
-        background-color: red;
+        background-color: black;
+        color: whitesmoke;
         width: 100px; }
 
 @media screen and (max-width: 320px) {
@@ -72,7 +75,7 @@
     border: 2px white solid;
     border-style: outset;
     box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-image: linear-gradient(to left, #ff4766); }
     .main-contacto .formulario-contacto {
       color: black;
       margin-bottom: 20px;
@@ -111,14 +114,14 @@
         outline: none;
         padding: 5px;
         margin: 15px;
-        background-color: black;
-        color: whitesmoke;
+        background-color: white;
+        color: black;
         font-family: "Poppins", sans-serif;
         font-weight: bold;
         font-size: 10px; }
         .main-contacto .enviar input:hover {
-          background-color: red;
-          width: 70px; } }
+          background-color: black;
+          color: whitesmoke; } }
 
 .grid-disco {
   display: grid;
@@ -139,33 +142,45 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 10px;
   padding-bottom: 10px; }
-  .disco1 iframe {
-    width: 90%;
-    border-radius: 15px;
-    margin: 30px 10px 30px 10px;
-    height: 200px; }
-  .disco1 .section1 {
-    color: white;
-    width: 800px;
-    height: 300px;
-    background-color: rgba(255, 0, 0, 0.6);
-    border-radius: 15px;
-    margin-top: 20px; }
-    .disco1 .section1 .columna1 {
-      color: white;
-      width: 100%; }
-    .disco1 .section1 .fila1 {
-      padding: 20px;
-      margin-left: 10px; }
-      .disco1 .section1 .fila1 td {
-        padding: 20px;
-        text-align: center; }
+  .disco1 .arriba {
+    display: flex;
+    flex-direction: row; }
+    .disco1 .arriba img {
+      height: 310px;
+      width: 280px;
+      border-radius: 15px; }
+    .disco1 .arriba div {
+      margin-top: 100px;
+      margin-left: 20px;
+      color: white; }
+      .disco1 .arriba div h2 {
+        font-size: 70px;
+        font-family: "Fugaz One", cursive; }
+      .disco1 .arriba div h3 {
+        font-family: "Poppins", sans-serif; }
+      .disco1 .arriba div img {
+        height: 30px;
+        width: 30px; }
+      .disco1 .arriba div p {
+        margin-top: 15px;
+        font-family: "Poppins", sans-serif;
+        background-color: rgba(255, 71, 102, 0.7);
+        border-radius: 15px;
+        padding: 5px;
+        font-weight: bold; }
   .disco1 .masdisco {
     text-align: center;
     color: white;
-    padding-top: 10%; }
-    .disco1 .masdisco p {
-      padding: 10%; }
+    margin: 0;
+    width: 300px; }
+    .disco1 .masdisco ol {
+      font-size: 18px;
+      font-family: "Fugaz One", cursive;
+      margin-left: 40px; }
+      .disco1 .masdisco ol li {
+        margin-top: 5px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif; }
 
 .disco2 {
   grid-area: disco2;
@@ -177,42 +192,44 @@
   background-color: rgba(0, 0, 0, 0.7);
   padding-top: 10px;
   padding-bottom: 10px; }
-  .disco2 img {
-    height: 300px;
-    width: 95%;
-    border-radius: 15px;
-    margin: 30px 10px 30px 20px; }
-  .disco2 .section1 {
-    color: white;
-    width: 110%;
-    height: 300px;
-    background-color: rgba(0, 128, 0, 0.5);
-    border-radius: 15px;
-    margin-top: 40px;
-    margin-left: 20px; }
-    .disco2 .section1 .columna1 {
-      color: white;
-      width: 100%; }
-    .disco2 .section1 .fila1 {
-      padding: 20px;
-      margin-left: 10px; }
-      .disco2 .section1 .fila1 td {
-        padding: 20px;
-        text-align: center; }
+  .disco2 .arriba {
+    display: flex;
+    flex-direction: row; }
+    .disco2 .arriba img {
+      height: 310px;
+      width: 300px;
+      border-radius: 15px; }
+    .disco2 .arriba div {
+      margin-top: 115px;
+      margin-left: 20px;
+      color: white; }
+      .disco2 .arriba div h2 {
+        font-size: 60px;
+        font-family: "Fugaz One", cursive; }
+      .disco2 .arriba div h3 {
+        font-family: "Poppins", sans-serif; }
+      .disco2 .arriba div img {
+        height: 30px;
+        width: 30px; }
+      .disco2 .arriba div p {
+        margin-top: 15px;
+        font-family: "Poppins", sans-serif;
+        background-color: rgba(0, 204, 142, 0.7);
+        border-radius: 15px;
+        padding: 5px;
+        font-weight: bold; }
   .disco2 .masdisco {
     text-align: center;
     color: white;
-    margin: auto;
-    padding: 2%; }
-    .disco2 .masdisco h3 {
-      background-color: rgba(0, 128, 0, 0.7);
-      color: white;
-      border-radius: 15px;
-      margin-top: 10px;
-      width: 80%;
-      margin-left: 30px; }
-    .disco2 .masdisco p {
-      padding-top: 50px; }
+    margin: 0;
+    width: 300px; }
+    .disco2 .masdisco ol {
+      font-size: 18px;
+      font-family: "Fugaz One", cursive; }
+      .disco2 .masdisco ol li {
+        margin-top: 5px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif; }
 
 @media screen and (max-width: 320px) {
   .grid-disco {
