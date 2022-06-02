@@ -299,7 +299,7 @@
       text-align: left;
       color: white;
       margin: 0;
-      margin-left: 0px;
+      margin-left: 40px;
       width: 200px; }
       .disco1 .masdisco ol {
         font-size: 15px;
@@ -1014,13 +1014,13 @@ header {
     font-size: large;
     margin-top: 15px;
     width: 40%;
-    margin-left: 35%;
+    margin-left: 36%;
     text-align: left;
     font-family: "Fugaz One", cursive; }
   .gregory .gregory-3 {
     padding: auto;
     margin-top: 20px;
-    margin-left: 35%;
+    margin-left: 36%;
     font-size: small;
     width: 50%;
     border-radius: 15px;
@@ -1179,7 +1179,7 @@ header {
         display: flex;
         justify-content: center;
         height: 10px; }
-      .video-1 .boton-mystic .play {
+      .video-1 .boton-mystic img {
         height: 10px; }
       .video-1 .boton-mystic:hover {
         background-color: red;
