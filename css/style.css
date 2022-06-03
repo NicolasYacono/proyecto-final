@@ -1160,7 +1160,7 @@ header {
     grid-template-columns: repeat(2, 49%);
     grid-template-rows: repeat(5, 200px);
     color: white;
-    grid-template-areas: "video-1 video-1"  "video-2 video-2" "gregory gregory" "publicidad publicidad" "spotify whatsapp"; }
+    grid-template-areas: "video-1 video-1" "video-2 video-2" "gregory gregory" "publicidad publicidad" "spotify whatsapp"; }
   .video-1 {
     grid-area: video-1;
     width: 100%;
