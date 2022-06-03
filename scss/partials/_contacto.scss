@@ -2,166 +2,154 @@
 @import "../sass2/extend";
 @import "../sass2/mixins";
 
+.main-contacto {
+	margin: 20px 50px 20px 250px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+	padding: 10px;
+	border: 2px white solid;
+	border-style: outset;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	background-image: linear-gradient(
+		to left,
+		rgb(255, 71, 102),
+		rgb(149, 138, 191)
+	);
 
-.main-contacto{
-    
-    margin: 20px 50px 20px 250px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    padding: 10px;
-    border: 2px white solid;
-    border-style: outset;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background-image: linear-gradient(to left, rgb(255, 71, 102), rgb(149, 138, 191));
-    
-    .acorde{
-        margin: -10 0 -10 0;
-    }
-    .formulario-contacto{
-        color: $color1;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        background-color:  rgba(255, 255, 255, 0.3);
-        outline: none;
-        font-family: $font-family2;
-        font-weight: $font-weight;
-        border-radius: 15px;
-        padding: auto;
-       
-        
-        
-            .fieldset1 {  
-                margin: 5px;
-                border: none;
-                
-                .legend1{
-                 margin-left: 28%;
-                 text-align: center;
-                 margin-bottom: 10px;
-                 
-                }
-                .label-apellido{
-                    padding-left: 20px;
-                }
-                input{
-                    color: $color1;
-                }
-            }
-    }
-    
-    .div-contacto{
-        font-family: $font-family2;
-        font-weight: $font-weight;
-        color: $color2;
-        padding: 5px;
-        margin-top: 10px;
-    }
-    .enviar{
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
-            input{
-            outline: none;
-            padding: 5px;
-            margin: 15px;
-            background-color: white;
-            color: $color1;
-            font-family: $font-family2;
-            font-weight: $font-weight;
-            &:hover{
-                background-color: black;
-                color: $color2;
-                width: 100px;
-            }
-            
-        }
-    }  
+	.acorde {
+		margin: -10 0 -10 0;
+	}
+	.formulario-contacto {
+		color: $color1;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		background-color: rgba(255, 255, 255, 0.3);
+		outline: none;
+		font-family: $font-family2;
+		font-weight: $font-weight;
+		border-radius: 15px;
+		padding: auto;
 
+		.fieldset1 {
+			margin: 5px;
+			border: none;
+
+			.legend1 {
+				margin-left: 28%;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			.label-apellido {
+				padding-left: 20px;
+			}
+			input {
+				color: $color1;
+			}
+		}
+	}
+
+	.div-contacto {
+		font-family: $font-family2;
+		font-weight: $font-weight;
+		color: $color2;
+		padding: 5px;
+		margin-top: 10px;
+	}
+	.enviar {
+		padding: 5px;
+		display: flex;
+		flex-direction: row;
+		input {
+			outline: none;
+			padding: 5px;
+			margin: 15px;
+			background-color: white;
+			color: $color1;
+			font-family: $font-family2;
+			font-weight: $font-weight;
+			&:hover {
+				background-color: black;
+				color: $color2;
+				width: 100px;
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
+	.main-contacto {
+		margin: 20px 50px 20px 250px;
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 250px;
+		padding: 5px;
+		margin: 10%;
+		border: 2px white solid;
+		border-style: outset;
+		box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.5);
+		background-image: linear-gradient(to left, rgb(255, 71, 102));
 
-    .main-contacto{
-    
-        margin: 20px 50px 20px 250px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
-        padding: 5px;
-        margin: 10%;
-        border: 2px white solid;
-        border-style: outset;
-        box-shadow: 20px 10px 20px rgba(0,0,0,0.5);
-        background-image: linear-gradient(to left, rgb(255, 71, 102));
-        
-        .formulario-contacto{
-            color: $color1;
-            margin-bottom: 20px;
-            margin-top: 10px;
-            background-color:  rgba(255, 255, 255, 0.6);
-            outline: none;
-            font-size: 10px;
-            font-family: $font-family2;
-            font-weight: $font-weight;
-            border-radius: 15px;
-            padding: auto;
-           
-                
-            
-                .fieldset1 {  
-                    margin: 5px;
-                    border: none;
-                    
-                    .legend1{
-                     margin-left: 25%;
-                     text-align: center;
-                     margin-bottom: 10px;
-                     
-                     
-                    }
-                    .label-apellido{
-                        padding-left: 20px;
-                        
-                    }
-                    input{
-                        color: $color1;
-                        font-size: 10px;
-                    }
-                }
-        }
-        .div-contacto{
-            font-family: $font-family2;
-            font-weight: $font-weight;
-            color: $color2;
-            padding: 5px;
-            margin-top: 10px;
-            font-size: 10px;
-        }
-        .enviar{
-            padding: 5px;
-            display: flex;
-            flex-direction: row;
-            input{
-                outline: none;
-                padding: 5px;
-                margin: 15px;
-                background-color: white;
-                color: $color1;
-                font-family: $font-family2;
-                font-weight: $font-weight;
-                font-size: 10px;
-                &:hover{
-                    background-color: black;
-                    color: $color2;
-                }
-                
-            }
-        }  
-    
-    }
+		.formulario-contacto {
+			color: $color1;
+			margin-bottom: 20px;
+			margin-top: 10px;
+			background-color: rgba(255, 255, 255, 0.6);
+			outline: none;
+			font-size: 10px;
+			font-family: $font-family2;
+			font-weight: $font-weight;
+			border-radius: 15px;
+			padding: auto;
+
+			.fieldset1 {
+				margin: 5px;
+				border: none;
+
+				.legend1 {
+					margin-left: 25%;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				.label-apellido {
+					padding-left: 20px;
+				}
+				input {
+					color: $color1;
+					font-size: 10px;
+				}
+			}
+		}
+		.div-contacto {
+			font-family: $font-family2;
+			font-weight: $font-weight;
+			color: $color2;
+			padding: 5px;
+			margin-top: 10px;
+			font-size: 10px;
+		}
+		.enviar {
+			padding: 5px;
+			display: flex;
+			flex-direction: row;
+			input {
+				outline: none;
+				padding: 5px;
+				margin: 15px;
+				background-color: white;
+				color: $color1;
+				font-family: $font-family2;
+				font-weight: $font-weight;
+				font-size: 10px;
+				&:hover {
+					background-color: black;
+					color: $color2;
+				}
+			}
+		}
+	}
 }
