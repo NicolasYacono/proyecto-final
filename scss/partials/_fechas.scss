@@ -5,11 +5,11 @@
 .grid-novedades {
 	display: grid;
 	border: none;
+	margin-left: 20px;
+	margin-right: 20px;
 	grid-template-columns: repeat(4, 24%);
 	grid-template-rows: repeat(4, 150px);
 	gap: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
 	grid-template-areas:
 		"concierto concierto1 concierto1 concierto1"
 		"concierto concierto2 concierto2 concierto2"
@@ -19,12 +19,11 @@
 .concierto1 {
 	grid-area: concierto1;
 	@include estilos-fechas;
-
 	.fecha-1 {
 		text-align: center;
 		background-color: rgb(255, 71, 102);
 		border: 2px black solid;
-		border-radius: 15px;
+		border-radius: $border-radius;
 		border-style: outset;
 		width: 80px;
 		border-radius: 20px;

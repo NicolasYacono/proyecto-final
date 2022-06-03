@@ -368,11 +368,11 @@
 .grid-novedades {
   display: grid;
   border: none;
+  margin-left: 20px;
+  margin-right: 20px;
   grid-template-columns: repeat(4, 24%);
   grid-template-rows: repeat(4, 150px);
   gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   grid-template-areas: "concierto concierto1 concierto1 concierto1" "concierto concierto2 concierto2 concierto2" "concierto concierto3 concierto3 concierto3" "pagar pagar pagar pagar"; }
 
 .concierto1 {
@@ -761,12 +761,12 @@
     height: 150px; } }
 
 .container-integrantes {
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 100%;
+  margin: auto; }
   .container-integrantes .cards {
     width: 370px;
     height: 400px;
@@ -784,17 +784,17 @@
       transform: translateY(-10px);
       background-color: rgba(0, 0, 0, 0.4); }
     .container-integrantes .cards h2 {
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      font-weight: bold;
-      color: white;
-      margin-top: 10px; }
-    .container-integrantes .cards p {
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      font-weight: bold;
-      color: white;
       margin-top: 10px;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: white; }
+    .container-integrantes .cards p {
+      margin-top: 10px;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: white;
       font-size: 14px; }
     .container-integrantes .cards .cover-cards {
       width: 100%;
@@ -806,12 +806,12 @@
 
 @media screen and (max-width: 320px) {
   .container-integrantes {
-    width: 100%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    width: 100%;
+    margin: auto; }
     .container-integrantes .cards {
       width: 300px;
       height: 350px;
@@ -829,17 +829,17 @@
         transform: translateY(-10px);
         background-color: rgba(0, 0, 0, 0.4); }
       .container-integrantes .cards h2 {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        color: white;
-        margin-top: 10px; }
-      .container-integrantes .cards p {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        color: white;
         margin-top: 10px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white; }
+      .container-integrantes .cards p {
+        margin-top: 10px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        color: white;
         font-size: 10px; }
       .container-integrantes .cards .cover-cards {
         width: 100%;
