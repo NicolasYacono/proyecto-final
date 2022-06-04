@@ -19,12 +19,12 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 20px;
+	margin-left: 30px;
 	font-size: 25px;
 	font-family: $font-family1;
 	color: $color1;
 	img {
-		margin-right: 20px;
+		margin-right: 30px;
 		margin-top: 5px;
 		height: 90px;
 	}
@@ -54,7 +54,7 @@ header {
 	margin: 30px;
 	border: none;
 	grid-template-columns: 2fr 2fr 0.5fr;
-	grid-template-rows: repeat(3, 250px);
+	grid-template-rows: 250px 250px 100px;
 	gap: 20px;
 	grid-template-areas:
 		"video-1 video-2 publicidad"
@@ -190,11 +190,10 @@ header {
 	border-radius: 15px;
 	margin-left: 30px;
 	margin-right: 30px;
-	margin-top: 20px;
 	color: $color1;
 	background-color: rgba(255, 71, 102, 0.3);
 	.gregory-2 {
-		margin-left: 36%;
+		margin-left: 40%;
 		margin-top: 15px;
 		width: 40%;
 		font-size: large;
@@ -204,7 +203,7 @@ header {
 	.gregory-3 {
 		padding: auto;
 		margin-top: 20px;
-		margin-left: 36%;
+		margin-left: 40%;
 		width: 50%;
 		font-size: small;
 		border-radius: $border-radius;
@@ -253,39 +252,43 @@ header {
 	grid-area: spotify;
 	display: flex;
 	justify-content: center;
-	margin-top: 25px;
+	margin-top: 10px;
 	margin-left: 30%;
-	padding-top: 40px;
+	padding-top: 15px;
 	width: 60%;
-	height: 60%;
+	height: 100%;
 	text-align: center;
 	background-color: rgb(30, 214, 113);
 	border-radius: 50%;
+	border: 1.5px black solid;
 	.jugospotify {
 		padding: 0px;
 		padding-right: 0;
-		color: rgb(30, 214, 113);
 		text-decoration: none;
 		text-align: center;
 		font-size: 1px;
+		color: rgb(30, 214, 113);
 	}
 	img {
 		height: 75px;
 	}
 	&:hover {
 		padding-top: 25px;
-		background-color: rgba(30, 214, 113, 0.5);
+		border: none;
+		background-color: rgba(30, 214, 113, 0.7);
 		.jugospotify {
-			font-family: $font-family2;
+			margin-left: 0;
+			margin-top: 15px;
+			font-family: $font-family1;
 			color: $color1;
 			font-weight: 5000;
-			text-align: center;
 			font-size: 20px;
-			margin-left: 0;
-			margin-top: 10px;
+			text-align: center;
 		}
 		img {
-			height: 100px;
+			margin-left: 5px;
+			padding-bottom: 30px;
+			height: 90px;
 		}
 	}
 }
@@ -293,39 +296,43 @@ header {
 	grid-area: whatsapp;
 	display: flex;
 	justify-content: center;
-	margin-top: 25px;
-	margin-left: 10%;
-	padding-top: 40px;
+	margin-top: 10px;
+	margin-left: 60px;
+	padding-top: 15px;
 	width: 60%;
-	height: 60%;
+	height: 100%;
 	background-color: rgb(37, 211, 102);
 	text-align: center;
 	border-radius: 50%;
+	border: 1.5px black solid;
 	.numerowhatsapp {
-		color: rgb(37, 211, 102);
 		padding: 0px;
 		padding-right: 0;
 		text-decoration: none;
 		text-align: center;
+		color: rgb(37, 211, 102);
 		font-size: 1px;
 	}
 	img {
 		height: 75px;
 	}
 	&:hover {
-		padding-top: 30px;
-		background-color: rgba(37, 211, 102, 0.5);
+		padding-top: 25px;
+		border: none;
+		background-color: rgba(37, 211, 102, 0.7);
 		.numerowhatsapp {
 			margin-left: 0;
-			margin-top: 10px;
-			font-family: $font-family2;
+			margin-top: 15px;
+			font-family: $font-family1;
 			font-weight: 5000;
 			font-size: 20px;
 			color: $color1;
 			text-align: center;
 		}
 		img {
-			height: 100px;
+			margin-left: 5px;
+			padding-bottom: 30px;
+			height: 90px;
 		}
 	}
 }
@@ -491,13 +498,13 @@ header {
 
 	.spotify {
 		grid-area: spotify;
-		margin: 15px 0px 15px 10px;
-		width: 80%;
-		height: auto;
+		margin: 30px 0px 15px 10px;
+		padding-top: 30px;
+		width: 90%;
+		height: 70%;
 		&:hover {
 			display: flex;
 			flex-direction: column;
-			margin-top: 5px;
 			.jugospotify {
 				font-size: 20px;
 			}
@@ -509,13 +516,13 @@ header {
 
 	.whatsapp {
 		grid-area: whatsapp;
-		margin: 15px 0px 15px 15px;
-		width: 80%;
-		height: auto;
+		margin: 30px 0px 15px 0px;
+		padding-top: 30px;
+		width: 90%;
+		height: 70%;
 		&:hover {
 			display: flex;
 			flex-direction: column;
-			margin-top: 5px;
 			.numerowhatsapp {
 				font-size: 20px;
 			}
@@ -528,7 +535,7 @@ header {
 
 footer {
 	padding: 10px 0px;
-	margin-top: 40px;
+	margin-top: 50px;
 	width: 100%;
 	background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
 	background-size: cover;

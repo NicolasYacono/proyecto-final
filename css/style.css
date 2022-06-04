@@ -513,7 +513,7 @@
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 30%;
   width: 40%;
   height: 100%;
@@ -782,9 +782,14 @@
     transition: all 300ms; }
     .container-integrantes .cards:hover {
       transform: translateY(-10px);
-      background-color: rgba(0, 0, 0, 0.4); }
+      background-color: rgba(0, 0, 0, 0.6); }
     .container-integrantes .cards h2 {
       margin-top: 10px;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: white; }
+    .container-integrantes .cards h3 {
       text-align: center;
       font-family: "Poppins", sans-serif;
       font-weight: bold;
@@ -827,7 +832,7 @@
       transition: all 300ms; }
       .container-integrantes .cards:hover {
         transform: translateY(-10px);
-        background-color: rgba(0, 0, 0, 0.4); }
+        background-color: rgba(0, 0, 0, 0.6); }
       .container-integrantes .cards h2 {
         margin-top: 10px;
         text-align: center;
@@ -865,12 +870,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: 25px;
   font-family: "Fugaz One", cursive;
   color: black; }
   header img {
-    margin-right: 20px;
+    margin-right: 30px;
     margin-top: 5px;
     height: 90px; }
 
@@ -894,7 +899,7 @@ header {
   margin: 30px;
   border: none;
   grid-template-columns: 2fr 2fr 0.5fr;
-  grid-template-rows: repeat(3, 250px);
+  grid-template-rows: 250px 250px 100px;
   gap: 20px;
   grid-template-areas: "video-1 video-2 publicidad" "gregory gregory publicidad" "spotify whatsapp publicidad"; }
 
@@ -1007,11 +1012,10 @@ header {
   border-radius: 15px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 20px;
   color: black;
   background-color: rgba(255, 71, 102, 0.3); }
   .gregory .gregory-2 {
-    margin-left: 36%;
+    margin-left: 40%;
     margin-top: 15px;
     width: 40%;
     font-size: large;
@@ -1020,7 +1024,7 @@ header {
   .gregory .gregory-3 {
     padding: auto;
     margin-top: 20px;
-    margin-left: 36%;
+    margin-left: 40%;
     width: 50%;
     font-size: small;
     border-radius: 15px;
@@ -1061,71 +1065,79 @@ header {
   grid-area: spotify;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-left: 30%;
-  padding-top: 40px;
+  padding-top: 15px;
   width: 60%;
-  height: 60%;
+  height: 100%;
   text-align: center;
   background-color: #1ed671;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 1.5px black solid; }
   .spotify .jugospotify {
     padding: 0px;
     padding-right: 0;
-    color: #1ed671;
     text-decoration: none;
     text-align: center;
-    font-size: 1px; }
+    font-size: 1px;
+    color: #1ed671; }
   .spotify img {
     height: 75px; }
   .spotify:hover {
     padding-top: 25px;
-    background-color: rgba(30, 214, 113, 0.5); }
+    border: none;
+    background-color: rgba(30, 214, 113, 0.7); }
     .spotify:hover .jugospotify {
-      font-family: "Poppins", sans-serif;
+      margin-left: 0;
+      margin-top: 15px;
+      font-family: "Fugaz One", cursive;
       color: black;
       font-weight: 5000;
-      text-align: center;
       font-size: 20px;
-      margin-left: 0;
-      margin-top: 10px; }
+      text-align: center; }
     .spotify:hover img {
-      height: 100px; }
+      margin-left: 5px;
+      padding-bottom: 30px;
+      height: 90px; }
 
 .whatsapp {
   grid-area: whatsapp;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-left: 10%;
-  padding-top: 40px;
+  margin-top: 10px;
+  margin-left: 60px;
+  padding-top: 15px;
   width: 60%;
-  height: 60%;
+  height: 100%;
   background-color: #25d366;
   text-align: center;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 1.5px black solid; }
   .whatsapp .numerowhatsapp {
-    color: #25d366;
     padding: 0px;
     padding-right: 0;
     text-decoration: none;
     text-align: center;
+    color: #25d366;
     font-size: 1px; }
   .whatsapp img {
     height: 75px; }
   .whatsapp:hover {
-    padding-top: 30px;
-    background-color: rgba(37, 211, 102, 0.5); }
+    padding-top: 25px;
+    border: none;
+    background-color: rgba(37, 211, 102, 0.7); }
     .whatsapp:hover .numerowhatsapp {
       margin-left: 0;
-      margin-top: 10px;
-      font-family: "Poppins", sans-serif;
+      margin-top: 15px;
+      font-family: "Fugaz One", cursive;
       font-weight: 5000;
       font-size: 20px;
       color: black;
       text-align: center; }
     .whatsapp:hover img {
-      height: 100px; }
+      margin-left: 5px;
+      padding-bottom: 30px;
+      height: 90px; }
 
 @media screen and (max-width: 320px) {
   header {
@@ -1249,26 +1261,26 @@ header {
     margin: 0; }
   .spotify {
     grid-area: spotify;
-    margin: 15px 0px 15px 10px;
-    width: 80%;
-    height: auto; }
+    margin: 30px 0px 15px 10px;
+    padding-top: 30px;
+    width: 90%;
+    height: 70%; }
     .spotify:hover {
       display: flex;
-      flex-direction: column;
-      margin-top: 5px; }
+      flex-direction: column; }
       .spotify:hover .jugospotify {
         font-size: 20px; }
       .spotify:hover img {
         height: 70px; }
   .whatsapp {
     grid-area: whatsapp;
-    margin: 15px 0px 15px 15px;
-    width: 80%;
-    height: auto; }
+    margin: 30px 0px 15px 0px;
+    padding-top: 30px;
+    width: 90%;
+    height: 70%; }
     .whatsapp:hover {
       display: flex;
-      flex-direction: column;
-      margin-top: 5px; }
+      flex-direction: column; }
       .whatsapp:hover .numerowhatsapp {
         font-size: 20px; }
       .whatsapp:hover img {
@@ -1276,7 +1288,7 @@ header {
 
 footer {
   padding: 10px 0px;
-  margin-top: 40px;
+  margin-top: 50px;
   width: 100%;
   background-image: url(/assets/img/footer/stacked-peaks-haikei.svg);
   background-size: cover;
