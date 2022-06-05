@@ -1,31 +1,87 @@
 @import "../variables/variables";
 
+@mixin background {
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
 @mixin estilos-fechas {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	color: $color2;
-	padding: 10px;
+	text-align: center;
+	background-color: rgb(255, 71, 102);
 	border: 2px black solid;
 	border-radius: 15px;
 	border-style: outset;
+	width: 80px;
+	border-radius: 20px;
+	height: 70px;
+	padding: 5px;
+	margin: 5px;
+}
+@mixin estilos-fechas-query {
+	background-color: rgb(255, 71, 102);
+	border: 2px black solid;
+	border-radius: 15px;
+	border-style: outset;
+	width: 50%;
+	border-radius: 20px;
+	height: fit-content;
+	padding: 5px;
+	margin-left: 25%;
+}
+
+@mixin ticket {
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border-radius: 20px;
+	border: 1.5px rgb(255, 71, 102) solid;
+}
+
+@mixin ticket-query {
+	margin-left: 35%;
+	padding: 10px;
+	height: 60px;
+	width: 80px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+@mixin conciertos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 25px;
+	padding: 10px;
 	width: 80%;
 	height: fit-content;
+	color: $color2;
+	border: 2px black solid;
+	border-radius: $border-radius;
+	border-style: outset;
 	background-color: rgba(0, 0, 0, 0.4);
 	font-family: $font-family2;
 	font-weight: $font-weight;
-	margin-top: 25px;
 }
 
-@mixin integrantes {
-	margin: auto;
-	padding: 10px;
-	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+@mixin discos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid;
 	border-radius: $border-radius;
-	background-color: rgba(255, 255, 255, 0.1);
-	border-left: 1px solid rgba(255, 255, 255, 0.5);
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	transition: all (300ms);
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+@mixin discos-query {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.7);
 }

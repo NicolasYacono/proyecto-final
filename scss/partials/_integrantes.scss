@@ -7,12 +7,12 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 30px;
-	width: 100%;
 	margin: auto;
+	width: 100%;
 	.cards {
 		width: 370px;
 		height: 400px;
-		@include integrantes;
+		@extend .integrantes;
 		&:hover {
 			transform: translateY(-10px);
 			background-color: rgba(0, 0, 0, 0.6);
@@ -63,7 +63,6 @@
 		.cards {
 			width: 300px;
 			height: 350px;
-			@include integrantes;
 			&:hover {
 				transform: translateY(-10px);
 				background-color: rgba(0, 0, 0, 0.6);
