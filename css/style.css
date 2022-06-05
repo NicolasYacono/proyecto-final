@@ -98,7 +98,7 @@
     border: 2px white solid;
     border-style: outset;
     box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to left, #ff4766); }
+    background-image: linear-gradient(to left, white); }
     .main-contacto .formulario-contacto {
       margin-bottom: 20px;
       margin-top: 10px;
@@ -772,7 +772,7 @@
         padding: 10px;
         height: 50px;
         width: 70px;
-        background-color: white;
+        background-color: color2;
         display: flex;
         align-items: center;
         color: red;
@@ -781,7 +781,7 @@
           margin-left: 25%;
           width: 50%;
           background-color: #ff4766;
-          border: 1.5px white solid; }
+          border: 1.5px color2 solid; }
           .concierto .fecha .compra:hover a {
             margin-left: 35%; }
             .concierto .fecha .compra:hover a img {
@@ -1229,14 +1229,13 @@ header {
   .video-1 {
     grid-area: video-1;
     width: 100%;
-    height: auto;
-    animation: movimiento 15s infinite linear alternate; }
+    height: auto; }
     .video-1 .titulo-1 {
       display: flex;
       margin-top: 150px;
       flex-direction: column;
       justify-content: center;
-      margin: auto;
+      margin-top: 150px;
       font-size: 6px; }
     .video-1 .boton-mystic {
       height: 15px; }
@@ -1248,12 +1247,7 @@ header {
         height: 10px; }
       .video-1 .boton-mystic:hover {
         background-color: red;
-        border-color: whitesmoke; }
-  @keyframes movimiento {
-    from {
-      background-position: right; }
-    to {
-      background-position: left; } }
+        border-color: white; }
   .video-2 {
     grid-area: video-2;
     width: 100%;

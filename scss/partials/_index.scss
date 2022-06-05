@@ -172,7 +172,7 @@ header {
 
 @keyframes entradas {
 	50% {
-		background-color: rgb(255, 71, 102);
+		background-color: $color3;
 	}
 }
 
@@ -231,7 +231,7 @@ header {
 	@include background;
 	background-size: contain;
 	border-radius: 15px;
-	border: 2px black solid;
+	border: 2px $color1 solid;
 	animation: pelagatos 10s infinite linear alternate;
 	background-color: rgb(255, 242, 0);
 }
@@ -386,13 +386,12 @@ header {
 		grid-area: video-1;
 		width: 100%;
 		height: auto;
-		animation: movimiento 15s infinite linear alternate;
 		.titulo-1 {
 			display: flex;
 			margin-top: 150px;
 			flex-direction: column;
 			justify-content: center;
-			margin: auto;
+			margin-top: 150px;
 			font-size: 6px;
 		}
 		.boton-mystic {
@@ -407,17 +406,8 @@ header {
 			}
 			&:hover {
 				background-color: red;
-				border-color: whitesmoke;
+				border-color: $color2;
 			}
-		}
-	}
-
-	@keyframes movimiento {
-		from {
-			background-position: right;
-		}
-		to {
-			background-position: left;
 		}
 	}
 
@@ -458,13 +448,13 @@ header {
 			margin-top: 5px;
 			padding: 3px;
 			color: $color2;
-			background-color: black;
+			background-color: $color1;
 			border-radius: $border-radius;
 			text-align: center;
 		}
 		.gregory-3 {
 			font-size: 0.5px;
-			color: white;
+			color: $color2;
 			margin: 5px;
 		}
 		a {
@@ -472,13 +462,13 @@ header {
 			margin-top: 160px;
 			padding: 5px;
 			text-decoration: none;
-			background-color: black;
-			border: 2px white solid;
+			background-color: $color1;
+			border: 2px $color2 solid;
 			border-radius: 15px;
 			h2 {
 				font-size: $font-family2;
 				font-size: 15px;
-				color: white;
+				color: $color2;
 				text-decoration: none;
 				text-align: center;
 			}
